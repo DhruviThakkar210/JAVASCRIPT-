@@ -1,0 +1,47 @@
+//switch Case//
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>switch case</title>
+</head>
+<body>
+<h1>YOUR CHOICES ARE :</h1>
+<ul>
+	<li>add </li>
+	<li>sub</li>
+	<li>multiply</li>
+</ul>
+<form>
+	<input type="text" name="name" id="choices"><br>
+	<br><button onclick="myfun()">click me</button>
+</form>
+<script>
+ function myfun()
+	{
+		var a = document.getElementById("choices").value;
+
+	switch(a)
+	{
+		case "add" : var a = 10;
+		           var b = 20;
+		           document.write("your addition is" + (a+b));
+		           break;
+        case "sub" : var a = 10;
+		           var b = 20;
+		           document.write("your subtraction is" + (b-a));
+		           break;
+		case "multiply" : var a = 10;
+		           var b = 20;
+		           document.write("your multiplication is" + (a*b));
+		           break;
+
+		default : alert("please enter the valid things");
+	}
+
+	}
+	
+</script>
+</body>
+</html>
