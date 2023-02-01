@@ -1,0 +1,25 @@
+//confirm box//
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>confirm</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function myfun() {
+			var a = confirm("WANNA SEE DHRUVI'S GITHUB PROFILE? ");
+			if(a == true)
+			{
+				window.open("https://github.com/DhruviThakkar210");
+			}
+			else
+			{
+				document.write("OOPSIE u clicked cross!");
+			}
+		}
+	</script>
+	<input type="button" name="button" onclick="myfun()" value="click me">
+</body>
+</html>
