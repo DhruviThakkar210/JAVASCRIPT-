@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dynamic clock</title>
+</head>
+<body>
+<p id="clock"></p>
+<script type="text/javascript">
+	var a = setInterval(clocks,1000);
+	function clocks() 
+	{
+	var a = new Date();
+	var c = a.toLocateTimeString();
+	 document.getElementById(clock).innerHTML = c;
+	}
+</script>
+</body>
+</html>
